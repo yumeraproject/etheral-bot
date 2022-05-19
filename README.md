@@ -1,2 +1,2 @@
-# Nazuna
- Nazuna Discord Bot
+# etheral
+Etheral Discord Bot
