@@ -1,0 +1,2 @@
+# Nazuna
+ Nazuna Discord Bot
