@@ -22,7 +22,7 @@
     "moment": "^2.29.1",
     "mongoose": "^6.2.2",
     "node-fetch": "^2.6.1",
-    "nodesu": "^0.7.3"
+    "socket.io-client": "^4.5.1"
   },
   "devDependencies": {
     "eslint": "^8.9.0"
