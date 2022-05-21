@@ -52,11 +52,11 @@ client.on('interactionCreate', async interaction => {
 		console.error(error);
 		const errorEmbed = new MessageEmbed()
 			.setColor('RED')
-			.setDescription('**<:error:939392259160416307> Command Error**\nThere was an error running this command, please report it in our [Discord](https://discord.com).\n```ㅤ```');
+			.setDescription('**<:error:939392259160416307> Command Error**\nThere was an error running this command, please report it in our [Discord](https://discord.gg/9puqhcUVZJ).\n```ㅤ```');
 		const errorRow = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
-					.setURL('https://discord.com')
+					.setURL('https://discord.gg/9puqhcUVZJ')
 					.setLabel('Go to our Discord')
 					.setStyle('LINK'),
 			);

@@ -1,11 +1,16 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
+const { SlashCommandBuilder} = require('@discordjs/builders');
+const { CommandInteractionOptionResolver } = require('discord.js');
 const { Modal, TextInputComponent, MessageActionRow } = require('discord.js');
 
 module.exports = {
+    /**
+	 * @param {CommandInteractionOptionResolver} interaction
+	 */
 	data: new SlashCommandBuilder()
-		.setName('modal')
-		.setDescription('testing modals')
-		.setDefaultPermission(true),
+		.setName('setup')
+		.setDescription('Setup a feature. ')
+		.setDefaultPermission(false)
+        .add,
 	async execute(interaction) {
 		const guild = interaction.guild;
 
