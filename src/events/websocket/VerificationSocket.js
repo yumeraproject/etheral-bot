@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 const guildSettingsSchema = require('../../database/schemas/GuildSettingsSchema');
 const mongo = require('../../database/Mongo');
 
-const socket = io('http://localhost:3001');
+const socket = io('ws://localhost:3001/verify');
 
 socket.on('verification', async (data) => {
 	const { status, userId, userName, guildId } = data;
@@ -61,7 +61,7 @@ socket.on('verification', async (data) => {
 		const embed = new MessageEmbed()
 			.setColor('2F3137')
 			.setTitle(`Verified ${userName}`)
-			.setDescription(`${userName} \`\`(${userId})\`\` has successfully verified.`);
+			.setDescription(`<@${userId}> \`\`(${userId})\`\` has successfully verified.`);
 		channel.send({ embeds: [embed] });
 
 		socket.emit('verification', {

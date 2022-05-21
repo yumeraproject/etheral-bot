@@ -10,7 +10,7 @@ const guildSettingsSchema = mongoose.Schema({
 		verificationEnabled: { type: Boolean, default: false },
 		verificationEmbedTitle: { type: String, default: 'Verification System' },
 		verificationEmbedMessage: { type: String, default: 'Please click the button below to start the Verification Process.' },
-		verificationRoleId: { type:String },
+		verificationRoleId: { type: String },
 		verificationChannelId: { type: String },
 	}),
 });
